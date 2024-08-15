@@ -10,54 +10,10 @@ But when it comes to Mac hardware it can be frustrating and quite a bit challeng
 
 
 
-## Step 1: Turn ON boot-up messages (so you can see what's going on)
-
-You need to change the boot manager.
-
-### How to change and edit GRUB the Linux boot manager
-If you need to update or change the Linux boot manager GRUB.
-
-Use `nano` text editor if you are not familiar with editor `vi`.
-
-If you prefere to edit with `nano` text editor use:
-
-```bash
-$ sudo nano /etc/default/grub
-# -- do your changes as required and save the file
-$ sudo update-grub
-```
-
-If you prefere to edit with `vi` text editor use:
-
-```bash
-$ sudo vi /etc/default/grub
-# -- do your changes as required and save the file
-$ sudo update-grub
-```
-
-
-Change this:
-```
-GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nomodeset"
-```
-
-To this:
-```
-GRUB_CMDLINE_LINUX_DEFAULT="splash nomodeset"
-```
-
-`nomodeset` - will disable the intel graphics features which can be sometimes a problem when your system does not boot.
-
-`quiet splash` - this will not show text output, instead a custom graphical logo.
-
-
-Then shut down your computer with your graphical user interface, or type in `reboot` to restart your computer.
 
 
 
-
-
-## Step 2: which sound Chip you are using?
+## Step 1: Which sound Chip you are using?
 
 
 `$ cat /proc/asound/card0/codec* | grep Codec`
@@ -70,7 +26,7 @@ Not is down, my sound chip is: _____________. You will need this information in 
 
 
 
-## Step 3: follow the instructions for your specific sound chip 
+## Step 2: follow the instructions for your specific sound chip 
 
 According to your sound chip, you need to follow different instructions.
 
@@ -162,3 +118,64 @@ You can kill the CoreAudio process by opening Terminal and running:
 
 It will restart automatically after a couple seconds.
 
+
+
+
+
+
+
+
+# Troubleshooting
+
+If something goes wrong.
+
+## Turn ON boot-up messages (so you can see what's going on)
+
+You need to change the boot manager.
+
+### How to change and edit GRUB the Linux boot manager
+If you need to update or change the Linux boot manager GRUB.
+
+Use `nano` text editor if you are not familiar with editor `vi`.
+
+If you prefere to edit with `nano` text editor use:
+
+```bash
+$ sudo nano /etc/default/grub
+# -- do your changes as required and save the file
+$ sudo update-grub
+```
+
+If you prefere to edit with `vi` text editor use:
+
+```bash
+$ sudo vi /etc/default/grub
+# -- do your changes as required and save the file
+$ sudo update-grub
+```
+
+Mini `vi` text editor howto:
+
+- `Cursor keys` - move up, down, left and right
+- `i` - insert text at current position
+- `ESC` - exit text insert mode
+- `:wq` - enter command mode and WRITE and QUIT
+- `:q!` - enter command mode and QUIT *without* saveing changes
+
+
+Change this:
+```
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nomodeset"
+```
+
+To this:
+```
+GRUB_CMDLINE_LINUX_DEFAULT="splash nomodeset"
+```
+
+`nomodeset` - will disable the intel graphics features which can be sometimes a problem when your system does not boot.
+
+`quiet splash` - this will not show text output, instead a custom graphical logo.
+
+
+Then shut down your computer with your graphical user interface, or type in `reboot` to restart your computer.

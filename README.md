@@ -126,7 +126,13 @@ It will restart automatically after a couple seconds.
 
 
 
+# FAQ
 
+## Can I use the same Linux if I changed / added a new support for my sound chip?
+
+Yes. In fact you can use the same Linux configuration and use it with diffrent hardware iMac, MacBook Pro, PC, etc. whatever hardware it will support.
+
+You can for example test your system and boot with Linux on an external USB-disk / SSD.
 
 
 # Troubleshooting

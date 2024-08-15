@@ -83,46 +83,7 @@ After that change your sound should work every restrat of your computer as expec
 - Level: not an easy fix
 - Known hardware that works: iMac19,2:
 
-```
-Devices:
 
-Built-in Microphone:
-
-  Default Input Device:	Yes
-  Input Channels:	2
-  Manufacturer:	Apple Inc.
-  Current SampleRate:	44100
-  Transport:	Built-in
-  Input Source:	Internal Microphone
-
-Built-in Output:
-
-  Default Output Device:	Yes
-  Default System Output Device:	Yes
-  Manufacturer:	Apple Inc.
-  Output Channels:	2
-  Current SampleRate:	48000
-  Transport:	Built-in
-  Output Source:	Internal Speakers
-
-BlackHole 64ch:
-
-  Input Channels:	64
-  Manufacturer:	Existential Audio Inc.
-  Output Channels:	64
-  Current SampleRate:	48000
-  Transport:	Virtual
-  Input Source:	Default
-  Output Source:	Default
-
-Multi-Output Device:
-
-  Manufacturer:	Apple Inc.
-  Output Channels:	2
-  Current SampleRate:	48000
-  Transport:	Unknown
-  Output Source:	Default
-```
 
 
 

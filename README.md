@@ -22,7 +22,7 @@ It should report your sound chip. For example:
 
 `Codec: Cirrus Logic CS8409`
 
-Not is down, my sound chip is: _____________. You will need this information in step 2.
+Note it down here, my sound chip is: _____________. You will need this information later in step 2.
 
 
 

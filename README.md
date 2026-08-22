@@ -3,11 +3,18 @@ How to make Linux audio sound working on Mac Hardware
 
 You can find this information online here: [How-to-make-Linux-audio-sound-working-on-Mac-Hardware](https://github.com/flagsoft/How-to-make-Linux-audio-sound-working-on-Mac-Hardware) 
 
-Last update: 15. AUG. 2024
+Last update: 22. AUG. 2026
 
 While sound on a regular PC hardware running Linux seems to work out of the box and not a big problem.
 But when it comes to Mac hardware it can be frustrating and quite a bit challenging.
 
+
+## If you have iMac28,2 on Zorin OS 18.1 with Linux Kernel 7.0.0-28-generic
+(22. AUG. 2026)
+Use this script. It's an update to this file https://github.com/xaviware/iMac181-CS8409-Audio-Fix-Ubuntu/blob/main/ubuntu-26.04-kernel-7.0/install-driver-imac181.sh
+of this project: iMac181-CS8409-Audio-Fix-Ubuntu from: [xaviware](https://github.com/xaviware/)
+
+https://github.com/flagsoft/iMac181-CS8409-Audio-Fix-Ubuntu/blob/main/ubuntu-26.04-kernel-7.0/install-driver-imac181.sh
 
 
 
@@ -92,13 +99,6 @@ Codes: **Cirrus Logic CS8409**
 You need to compile and install a Linux kernel module by yourself. 
 [https://www.github.com/davidjo/snd_hda_macbookpro](https://github.com/davidjo/snd_hda_macbookpro)
 
-
-### If you have iMac28,2 on Zorin OS 18.1 with Linux Kernel 7.0.0-28-generic
-
-Use this script. It's an update to this file https://github.com/xaviware/iMac181-CS8409-Audio-Fix-Ubuntu/blob/main/ubuntu-26.04-kernel-7.0/install-driver-imac181.sh
-of this project: iMac181-CS8409-Audio-Fix-Ubuntu from: [xaviware](https://github.com/xaviware/)
-
-https://github.com/flagsoft/iMac181-CS8409-Audio-Fix-Ubuntu/blob/main/ubuntu-26.04-kernel-7.0/install-driver-imac181.sh
 
 
 

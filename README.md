@@ -93,6 +93,15 @@ You need to compile and install a Linux kernel module by yourself.
 [https://www.github.com/davidjo/snd_hda_macbookpro](https://github.com/davidjo/snd_hda_macbookpro)
 
 
+### If you have iMac28,2 on Zorin OS 18.1 with Linux Kernel 7.0.0-28-generic
+
+Use this script. It's an update to this file https://github.com/xaviware/iMac181-CS8409-Audio-Fix-Ubuntu/blob/main/ubuntu-26.04-kernel-7.0/install-driver-imac181.sh
+of this project: iMac181-CS8409-Audio-Fix-Ubuntu from: [xaviware](https://github.com/xaviware/)
+
+https://github.com/flagsoft/iMac181-CS8409-Audio-Fix-Ubuntu/blob/main/ubuntu-26.04-kernel-7.0/install-driver-imac181.sh
+
+
+
 #### How to fix Sound distorted in macOS (restart coreaudio)
 Problem
 - Sound distorted after reboot back to macOS (how to restore macOS sound coreaudio)

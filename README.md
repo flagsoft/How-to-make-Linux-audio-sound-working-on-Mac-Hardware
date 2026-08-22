@@ -1,5 +1,5 @@
-# How to make Linux audio sound working on Apple Mac Hardware
-How to make Linux audio sound working on Mac Hardware
+# How to make Linux audio sound working on Mac Hardware
+How to make Linux audio sound working on Mac Hardware from Apple.
 
 You can find this information online here: [How-to-make-Linux-audio-sound-working-on-Mac-Hardware](https://github.com/flagsoft/How-to-make-Linux-audio-sound-working-on-Mac-Hardware) 
 

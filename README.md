@@ -191,6 +191,26 @@ It will restart automatically after a couple seconds.
 
 # FAQ
 
+## How can I download Linux source code Zorin OS?
+
+```
+sudo apt-get source linux-image-unsigned-7.0.0-28-generic
+
+sudo apt-get source linux-image-unsigned-7.0.0-30-generic    
+
+sudo apt-get source linux-image-unsigned-7.0.0-38-generic
+```
+
+This expands to "./linux-hwe-7.0-7.0.0/"
+(The install sound script renames this folder to ./linux-source-7.0.0/)
+
+
+After install sound script runs successfully you must have this dynamic kernel modul (DKMS):
+```
+/usr/lib/modules/7.0.0-28-generic/updates/dkms/snd-hda-codec-cs409.ko.zst"
+```
+
+
 ## Can I use the same Linux if I changed / added a new support for my sound chip?
 
 Yes. In fact you can use the same Linux configuration and use it with diffrent hardware iMac, MacBook Pro, PC, etc. whatever hardware it will support.

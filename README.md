@@ -3,7 +3,7 @@ How to make Linux audio sound working on Mac Hardware from Apple.
 
 You can find this information online here: [How-to-make-Linux-audio-sound-working-on-Mac-Hardware](https://github.com/flagsoft/How-to-make-Linux-audio-sound-working-on-Mac-Hardware) 
 
-Last update: 22. AUG. 2026
+Last update: 18. OCT. 2026
 
 While sound on a regular PC hardware running Linux seems to work out of the box and not a big problem.
 But when it comes to Mac hardware it can be frustrating and quite a bit challenging.
@@ -252,3 +252,24 @@ GRUB_CMDLINE_LINUX_DEFAULT="splash nomodeset"
 
 
 Then shut down your computer with your graphical user interface, or type in `reboot` to restart your computer.
+
+
+
+### check if sound is there
+
+```
+dkms status | grep snd_hda_macbookpro
+```
+
+```
+aplay -l
+```
+
+```
+speaker-test -c 2 -t wav
+```
+
+```
+journalctl -b 0 | grep -i cs8409 | head -10
+```
+(it must show 'trying APPLE' in the output) 

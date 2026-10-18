@@ -1,4 +1,4 @@
-# How to make Linux audio sound working on Mac Hardware
+# How to make Linux audio sound working on Apple Mac Hardware
 How to make Linux audio sound working on Mac Hardware from Apple.
 
 You can find this information online here: [How-to-make-Linux-audio-sound-working-on-Mac-Hardware](https://github.com/flagsoft/How-to-make-Linux-audio-sound-working-on-Mac-Hardware) 
@@ -9,7 +9,8 @@ While sound on a regular PC hardware running Linux seems to work out of the box 
 But when it comes to Mac hardware it can be frustrating and quite a bit challenging.
 
 
-## If you have iMac28,2 on Zorin OS 18.1 with Linux Kernel version 7.0.0-28-generic or similar
+
+# If you have iMac28,2 on Zorin OS 18.1 with Linux Kernel version 7.0.0-28-generic or similar
 (22. AUG. 2026)
 Use this script:
 https://github.com/flagsoft/iMac181-CS8409-Audio-Fix-Ubuntu/blob/main/ubuntu-26.04-kernel-7.0/install-driver-imac181.sh
@@ -20,9 +21,11 @@ Then it compiles the source into a module.  Next time you reboot it uses this fi
 It's an update to this file https://github.com/xaviware/iMac181-CS8409-Audio-Fix-Ubuntu/blob/main/ubuntu-26.04-kernel-7.0/install-driver-imac181.sh
 of this project: iMac181-CS8409-Audio-Fix-Ubuntu from: [xaviware](https://github.com/xaviware/)
 
+## Hint
 
 
-## How to update Linux Kernel on Zorin OS
+
+# How to update Linux Kernel on Zorin OS
 (18. OCT 2026)
 1. You need to run the install-driver-imac181.sh only ONCE. In installs a dynamic kernel module so called DKMS which gets compiled automatically if new kernel installes.
 
@@ -47,6 +50,9 @@ Make sure it looks like:
 ```
 GRUB_DEFAULT=0
 GRUB_TOP_LEVEL=/boot/vmlinuz-7.0.0-38-generic
+GRUB_TIMEOUT_STYLE=menu
+GURB_TIMEOUT=10
+...
 ```
 
 Install new boot loader with:
@@ -66,8 +72,9 @@ Or just use Settings, About to see that the new kernel is in use.
 
 
 
-## Step 1: Which sound Chip you are using?
+## If you have iMac28,1
 
+### Step 1: Which sound Chip you are using?
 
 `$ cat /proc/asound/card0/codec* | grep Codec`
 
@@ -79,12 +86,12 @@ Note it down here, my sound chip is: _____________. You will need this informati
 
 
 
-## Step 2: follow the instructions for your specific sound chip 
+### Step 2: follow the instructions for your specific sound chip 
 
 According to your sound chip, you need to follow different instructions.
 
 
-### Sound Chip: Intel HDA?
+#### Sound Chip: Intel HDA?
 Known hardware to work: iMac??,?
 Level: easy
 
@@ -131,7 +138,7 @@ After that change your sound should work every restrat of your computer as expec
 
 
 
-### Sound Chip: Cirrus Logic CS8409
+#### Sound Chip: Cirrus Logic CS8409
 - Status: works
 - Level: not an easy fix
 - Known hardware that works: iMac19,2:

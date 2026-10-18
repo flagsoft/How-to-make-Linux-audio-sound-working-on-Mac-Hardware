@@ -196,6 +196,8 @@ It will restart automatically after a couple seconds.
 First make sure you have Source code enabled, so Zorin OS can download it.
 > App Software Updater > Settings > enable [x] Source Code.
 
+Choose one (you can see available new kernels within the Software Updater App):
+
 ```
 sudo apt-get source linux-image-unsigned-7.0.0-28-generic
 

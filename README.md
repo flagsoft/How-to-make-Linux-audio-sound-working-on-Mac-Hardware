@@ -10,23 +10,23 @@ But when it comes to Mac hardware it can be frustrating and quite a bit challeng
 
 
 
-# If you have iMac28,2 on Zorin OS 18.1 with Linux Kernel version 7.0.0-28-generic or similar
+# *** If you have iMac28,2 on Zorin OS 18.1 with Linux Kernel version 7.0.0-28-generic or similar
 (22. AUG. 2026)
 Use this script:
 https://github.com/flagsoft/iMac181-CS8409-Audio-Fix-Ubuntu/blob/main/ubuntu-26.04-kernel-7.0/install-driver-imac181.sh
 
+It works for iMac18,1 and iMac18,2 models.
+NOTE: If you have a more common compatible iMac18,1 you maybe do not need this kernel module, see below.
+
 It basically downloads Linux kernel source 7.0.0-28-generic then create a .tar.bz2 but only from sound/hda with applied patches for Apple Hardware.
 Then it compiles the source into a module.  Next time you reboot it uses this fixed sound module.
 
-It's an update to this file
-```
-https://github.com/xaviware/iMac181-CS8409-Audio-Fix-Ubuntu/blob/main/ubuntu-26.04-kernel-7.0/install-driver-imac181.sh
-```
+It's an update to this file https://github.com/xaviware/iMac181-CS8409-Audio-Fix-Ubuntu/blob/main/ubuntu-26.04-kernel-7.0/install-driver-imac181.sh
 of this project: iMac181-CS8409-Audio-Fix-Ubuntu from: [[xaviware](https://github.com/xaviware/)](https://github.com/xaviware/). 
 
 
 
-# How to update Linux Kernel on Zorin OS
+# How to update Linux Kernel on Zorin OS
 (18. OCT 2026)
 1. You need to run the install-driver-imac181.sh only ONCE. In installs a dynamic kernel module so called DKMS which gets compiled automatically if new kernel installes.
 
@@ -73,7 +73,7 @@ Or just use Settings, About to see that the new kernel is in use.
 
 
 
-## If you have iMac28,1
+## *** IF you have iMac28,1
 
 ### Step 1: Which sound Chip you are using?
 

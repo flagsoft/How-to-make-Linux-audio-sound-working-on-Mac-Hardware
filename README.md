@@ -10,13 +10,13 @@ But when it comes to Mac hardware it can be frustrating and quite a bit challeng
 
 
 
-# *** If you have iMac28,2 on Zorin OS 18.1 with Linux Kernel version 7.0.0-28-generic or similar
+# *** If you have iMac28,2 Retina display on Zorin OS 18.1 with Linux Kernel version 7.0.0-28-generic or similar
 (22. AUG. 2026)
 Use this script:
 https://github.com/flagsoft/iMac181-CS8409-Audio-Fix-Ubuntu/blob/main/ubuntu-26.04-kernel-7.0/install-driver-imac181.sh
 
 It works for iMac18,1 and iMac18,2 models.
-NOTE: If you have a more common compatible iMac18,1 you maybe do not need this kernel module, see below.
+NOTE: If you have a more common compatible iMac18,1 non retina display you maybe do not need this kernel module, see below.
 
 It basically downloads Linux kernel source 7.0.0-28-generic then create a .tar.bz2 but only from sound/hda with applied patches for Apple Hardware.
 Then it compiles the source into a module.  Next time you reboot it uses this fixed sound module.

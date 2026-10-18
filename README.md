@@ -18,10 +18,11 @@ https://github.com/flagsoft/iMac181-CS8409-Audio-Fix-Ubuntu/blob/main/ubuntu-26.
 It basically downloads Linux kernel source 7.0.0-28-generic then create a .tar.bz2 but only from sound/hda with applied patches for Apple Hardware.
 Then it compiles the source into a module.  Next time you reboot it uses this fixed sound module.
 
-It's an update to this file https://github.com/xaviware/iMac181-CS8409-Audio-Fix-Ubuntu/blob/main/ubuntu-26.04-kernel-7.0/install-driver-imac181.sh
-of this project: iMac181-CS8409-Audio-Fix-Ubuntu from: [xaviware](https://github.com/xaviware/)
-
-## Hint
+It's an update to this file
+```
+https://github.com/xaviware/iMac181-CS8409-Audio-Fix-Ubuntu/blob/main/ubuntu-26.04-kernel-7.0/install-driver-imac181.sh
+```
+of this project: iMac181-CS8409-Audio-Fix-Ubuntu from: [[xaviware](https://github.com/xaviware/)](https://github.com/xaviware/). 
 
 
 

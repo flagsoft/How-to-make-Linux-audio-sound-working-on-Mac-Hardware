@@ -9,7 +9,7 @@ While sound on a regular PC hardware running Linux seems to work out of the box 
 But when it comes to Mac hardware it can be frustrating and quite a bit challenging.
 
 
-## If you have iMac28,2 on Zorin OS 18.1 with Linux Kernel 7.0.0-28-generic
+## If you have iMac28,2 on Zorin OS 18.1 with Linux Kernel version 7.0.0-28-generic or similar
 (22. AUG. 2026)
 Use this script:
 https://github.com/flagsoft/iMac181-CS8409-Audio-Fix-Ubuntu/blob/main/ubuntu-26.04-kernel-7.0/install-driver-imac181.sh
@@ -20,16 +20,15 @@ Then it compiles the source into a module.  Next time you reboot it uses this fi
 It's an update to this file https://github.com/xaviware/iMac181-CS8409-Audio-Fix-Ubuntu/blob/main/ubuntu-26.04-kernel-7.0/install-driver-imac181.sh
 of this project: iMac181-CS8409-Audio-Fix-Ubuntu from: [xaviware](https://github.com/xaviware/)
 
-.
 
 
-### How to Update Linux Kernel on Zorin OS?
-
+## How to update Linux Kernel on Zorin OS
+(18. OCT 2026)
 1. You need to run the install-driver-imac181.sh only ONCE. In installs a dynamic kernel module so called DKMS which gets compiled automatically if new kernel installes.
 
 For example, you know have a Linux version 7.0.0-28-generic kernel up and running with sound working.
 
-"Dynamic Kernel Module Support (DKMS) is a program/framework that enables generating Linux kernel modules whose sources generally reside outside the kernel source tree. The concept is to have DKMS modules automatically rebuilt when a new kernel is installed." Source [Wikipedia](https://en.wikipedia.org/wiki/Dynamic_Kernel_Module_Support) 
+"Dynamic Kernel Module Support (DKMS) is a program/framework that enables generating Linux kernel modules whose sources generally reside outside the kernel source tree. The concept is to have DKMS modules automatically rebuilt when a new kernel is installed." Source [[Wikipedia](https://en.wikipedia.org/wiki/Dynamic_Kernel_Module_Support)](https://en.wikipedia.org/wiki/Dynamic_Kernel_Module_Support) 
 
 2. Update your Zorin OS as usual
 

@@ -193,6 +193,9 @@ It will restart automatically after a couple seconds.
 
 ## How can I download Linux source code Zorin OS?
 
+First make sure you have Source code enabled, so Zorin OS can download it.
+> App Software Updater > Settings > enable [x] Source Code.
+
 ```
 sudo apt-get source linux-image-unsigned-7.0.0-28-generic
 

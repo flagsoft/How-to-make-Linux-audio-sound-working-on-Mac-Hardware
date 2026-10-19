@@ -120,7 +120,7 @@ $ cat /proc/asound/cards
                         HDA ATI HDMI at 0x.......... irq 64
 ```
 
-Thurn UP VOLUME sliders!
+Turn UP VOLUME sliders!
 
 You should hear audio now. Playing youtube video, etc.
 

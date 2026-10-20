@@ -215,7 +215,7 @@ This expands to "./linux-hwe-7.0-7.0.0/"
 
 After install sound script runs successfully you must have this dynamic kernel modul (DKMS):
 ```
-/usr/lib/modules/7.0.0-28-generic/updates/dkms/snd-hda-codec-cs409.ko.zst"
+/usr/lib/modules/7.0.0-28-generic/updates/dkms/snd-hda-codec-cs409.ko.zst
 ```
 
 
